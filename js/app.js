@@ -23,6 +23,7 @@ function mapData(data) {
                     <img src="${images[element.id - 1]}" alt="">
                 </div>
                 <div class="card__info info">
+                <p>${element.username}</p>
                 <h3 class="title">
                     ${element.name}
                 </h3>
@@ -53,7 +54,7 @@ function mapData(data) {
       element.website
     }</a>
                 </h4>
-                <h4>Company: ${element.company.name+" company"}</h4> 
+                <p class = "company">Company: ${element.company.name + " company"}</p> 
                 </div>     
             </div>
         `;
