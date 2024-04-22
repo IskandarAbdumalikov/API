@@ -94,6 +94,11 @@ h4{
   }
 }
 
+span{
+  color: $primaryColor;
+  font-size: 18px;
+}
+
 @media (max-width: 900px) {
   .city__cards {
     grid-template-columns: 1fr;

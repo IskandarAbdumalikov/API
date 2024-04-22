@@ -27,12 +27,13 @@ function mapData(data) {
                 <h3 class="title">
                     ${element.name}
                 </h3>
-                <h4 class="email">Email: 
+                <p class="email">
+                <span>Email:</span> 
                 <a  target="_blank" class="link" href="${element.email}">${
       element.email
     }</a> 
-                </h4>
-                <h4 class="address">Address:           
+                </p>
+                <p class="address"><span>Address:</span>           
                 ${
                   element.address.city +
                   " city" +
@@ -43,18 +44,20 @@ function mapData(data) {
                   element.address.suite +
                   " suite"
                 }                 
-                </h4>
-                <h4 class="phone">Phone number: 
+                </p>
+                <p class="phone"><span>Phone number:</span> 
                   <a  target="_blank" class = "link" href="tel: ${
                     element.phone
                   }"> ${element.phone}</a>          
-                </h4>
-                <h4>Website: 
+                </p>
+                <p><span>Website: </span>
                     <a target="_blank" class="link" href="${element.website}">${
       element.website
     }</a>
-                </h4>
-                <p class = "company">Company: ${element.company.name + " company"}</p> 
+                </p>
+                <p class = "company"><span>Company:</span> ${
+                  element.company.name + " company"
+                }</p> 
                 </div>     
             </div>
         `;
